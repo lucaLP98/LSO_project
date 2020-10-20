@@ -1,0 +1,281 @@
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:7:29
+localhost		server			start_session		19/10/2020		2:7:33
+0.0.0.0		luca			login_client		19/10/2020		2:7:40
+127.0.0.1		kimi			login_client		19/10/2020		2:7:47
+127.0.0.1		kimi			object_taken		19/10/2020		2:7:53
+127.0.0.1		kimi			obje_deposited		19/10/2020		2:7:59
+localhost		server			end_session		19/10/2020		2:7:59
+127.0.0.1		kimi			Winner			19/10/2020		2:7:59
+127.0.0.1		kimi			logout_client		19/10/2020		2:7:59
+0.0.0.0		luca			Lose			19/10/2020		2:8:2
+0.0.0.0		luca			logout_client		19/10/2020		2:8:2
+localhost		server			start_session		19/10/2020		2:8:5
+127.0.0.1		luca			login_client		19/10/2020		2:8:15
+127.0.0.1		kimi			login_client		19/10/2020		2:8:22
+127.0.0.1		lucap			registration		19/10/2020		2:8:47
+127.0.0.1		lucap			login_client		19/10/2020		2:8:51
+127.0.0.1		lucap			logout_client		19/10/2020		2:8:56
+127.0.0.1		kimi			logout_client		19/10/2020		2:8:59
+127.0.0.1		luca			logout_client		19/10/2020		2:9:1
+localhost		server			close_server		19/10/2020		2:9:3
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:10:34
+localhost		server			start_session		19/10/2020		2:10:36
+0.0.0.0		luca			login_client		19/10/2020		2:10:40
+127.0.0.1		kimi			login_client		19/10/2020		2:10:52
+0.0.0.0		luca			object_taken		19/10/2020		2:10:58
+0.0.0.0		luca			obje_deposited		19/10/2020		2:10:59
+localhost		server			end_session		19/10/2020		2:10:59
+0.0.0.0		luca			Winner			19/10/2020		2:10:59
+0.0.0.0		luca			logout_client		19/10/2020		2:10:59
+localhost		server			start_session		19/10/2020		2:10:59
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:13:22
+localhost		server			start_session		19/10/2020		2:13:24
+0.0.0.0		luca			login_client		19/10/2020		2:13:28
+127.0.0.1		kimi			login_client		19/10/2020		2:13:39
+127.0.0.1		kimi			object_taken		19/10/2020		2:13:47
+127.0.0.1		kimi			obje_deposited		19/10/2020		2:13:49
+localhost		server			end_session		19/10/2020		2:13:49
+127.0.0.1		kimi			Winner			19/10/2020		2:13:49
+127.0.0.1		kimi			logout_client		19/10/2020		2:13:49
+localhost		server			start_session		19/10/2020		2:13:49
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:35:12
+localhost		server			start_session		19/10/2020		2:35:14
+0.0.0.0		luca			login_client		19/10/2020		2:35:23
+127.0.0.1		kimi			login_client		19/10/2020		2:35:31
+0.0.0.0		luca			object_taken		19/10/2020		2:35:37
+0.0.0.0		luca			obje_deposited		19/10/2020		2:35:44
+localhost		server			end_session		19/10/2020		2:35:44
+0.0.0.0		luca			Winner			19/10/2020		2:35:44
+0.0.0.0		luca			logout_client		19/10/2020		2:35:44
+localhost		server			start_session		19/10/2020		2:35:44
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:37:2
+localhost		server			start_session		19/10/2020		2:37:3
+0.0.0.0		luca			login_client		19/10/2020		2:37:8
+127.0.0.1		kimi			login_client		19/10/2020		2:37:16
+0.0.0.0		luca			object_taken		19/10/2020		2:37:20
+0.0.0.0		luca			obje_deposited		19/10/2020		2:37:23
+localhost		server			end_session		19/10/2020		2:37:23
+0.0.0.0		luca			Winner			19/10/2020		2:37:23
+0.0.0.0		luca			logout_client		19/10/2020		2:37:23
+127.0.0.1		kimi			Lose			19/10/2020		2:37:30
+127.0.0.1		kimi			logout_client		19/10/2020		2:37:30
+localhost		server			close_server		19/10/2020		2:37:41
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:38:2
+localhost		server			start_session		19/10/2020		2:38:4
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:38:11
+localhost		server			start_session		19/10/2020		2:38:14
+0.0.0.0		luca			login_client		19/10/2020		2:38:20
+127.0.0.1		kimi			login_client		19/10/2020		2:38:29
+0.0.0.0		luca			object_taken		19/10/2020		2:38:37
+0.0.0.0		luca			obje_deposited		19/10/2020		2:38:39
+localhost		server			end_session		19/10/2020		2:38:39
+localhost		server			start_session		19/10/2020		2:38:39
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		2:45:13
+localhost		server			start_session		19/10/2020		2:45:15
+0.0.0.0		luca			login_client		19/10/2020		2:45:21
+127.0.0.1		kimi			login_client		19/10/2020		2:45:27
+127.0.0.1		kimi			object_taken		19/10/2020		2:45:32
+127.0.0.1		kimi			obje_deposited		19/10/2020		2:45:33
+localhost		server			end_session		19/10/2020		2:45:33
+127.0.0.1		kimi			Winner			19/10/2020		2:45:33
+127.0.0.1		kimi			logout_client		19/10/2020		2:45:33
+0.0.0.0		luca			Lose			19/10/2020		2:45:36
+0.0.0.0		luca			logout_client		19/10/2020		2:45:36
+localhost		server			start_session		19/10/2020		2:45:36
+localhost		server			close_server		19/10/2020		3:2:7
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		3:3:7
+localhost		server			start_session		19/10/2020		3:3:11
+0.0.0.0		luca			login_client		19/10/2020		3:3:18
+127.0.0.1		kimi			login_client		19/10/2020		3:3:40
+0.0.0.0		luca			object_taken		19/10/2020		3:3:48
+0.0.0.0		luca			obje_deposited		19/10/2020		3:3:51
+localhost		server			end_session		19/10/2020		3:3:51
+0.0.0.0		luca			Winner			19/10/2020		3:3:51
+0.0.0.0		luca			logout_client		19/10/2020		3:3:51
+127.0.0.1		kimi			Lose			19/10/2020		3:3:55
+127.0.0.1		kimi			logout_client		19/10/2020		3:3:55
+localhost		server			start_session		19/10/2020		3:3:55
+127.0.0.1		lucap			login_client		19/10/2020		3:4:6
+127.0.0.1		kimi			login_client		19/10/2020		3:4:13
+127.0.0.1		kimi			logout_client		19/10/2020		3:4:16
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		3:18:36
+localhost		server			start_session		19/10/2020		3:18:40
+0.0.0.0		luca			login_client		19/10/2020		3:18:45
+127.0.0.1		kimi			login_client		19/10/2020		3:18:52
+127.0.0.1		kimi			object_taken		19/10/2020		3:18:56
+127.0.0.1		kimi			obje_deposited		19/10/2020		3:19:4
+localhost		server			end_session		19/10/2020		3:19:4
+127.0.0.1		kimi			Winner			19/10/2020		3:19:4
+127.0.0.1		kimi			logout_client		19/10/2020		3:19:4
+0.0.0.0		luca			Lose			19/10/2020		3:19:8
+0.0.0.0		luca			logout_client		19/10/2020		3:19:8
+localhost		server			start_session		19/10/2020		3:19:8
+127.0.0.1		kimi			login_client		19/10/2020		3:19:15
+127.0.0.1		luca			login_client		19/10/2020		3:19:23
+127.0.0.1		lucap			login_client		19/10/2020		3:19:40
+127.0.0.1		lucap			logout_client		19/10/2020		3:19:43
+127.0.0.1		kimi			logout_client		19/10/2020		3:19:48
+127.0.0.1		luca			logout_client		19/10/2020		3:19:49
+localhost		server			close_server		19/10/2020		3:19:50
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		3:24:28
+localhost		server			start_session		19/10/2020		3:24:31
+0.0.0.0		luca			login_client		19/10/2020		3:24:35
+127.0.0.1		kimi			login_client		19/10/2020		3:24:41
+0.0.0.0		luca			object_taken		19/10/2020		3:24:47
+0.0.0.0		luca			obje_deposited		19/10/2020		3:24:50
+localhost		server			end_session		19/10/2020		3:24:50
+0.0.0.0		luca			Winner			19/10/2020		3:24:50
+0.0.0.0		luca			logout_client		19/10/2020		3:24:50
+127.0.0.1		kimi			Lose			19/10/2020		3:24:53
+127.0.0.1		kimi			logout_client		19/10/2020		3:24:53
+localhost		server			start_session		19/10/2020		3:24:53
+127.0.0.1		lucap			login_client		19/10/2020		3:25:1
+127.0.0.1		eskimo			registration		19/10/2020		3:25:11
+127.0.0.1		eskimo			login_client		19/10/2020		3:25:17
+127.0.0.1		eskimo			object_taken		19/10/2020		3:25:21
+127.0.0.1		eskimo			obje_deposited		19/10/2020		3:25:25
+localhost		server			end_session		19/10/2020		3:25:25
+127.0.0.1		eskimo			Winner			19/10/2020		3:25:25
+127.0.0.1		eskimo			logout_client		19/10/2020		3:25:25
+127.0.0.1		lucap			Lose			19/10/2020		3:25:29
+127.0.0.1		lucap			logout_client		19/10/2020		3:25:29
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		3:25:56
+localhost		server			start_session		19/10/2020		3:25:59
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		3:26:6
+localhost		server			start_session		19/10/2020		3:26:8
+0.0.0.0		luca			login_client		19/10/2020		3:26:16
+127.0.0.1		kimi			login_client		19/10/2020		3:26:33
+0.0.0.0		luca			object_taken		19/10/2020		3:26:43
+0.0.0.0		luca			obje_deposited		19/10/2020		3:26:45
+localhost		server			end_session		19/10/2020		3:26:45
+0.0.0.0		luca			Winner			19/10/2020		3:26:45
+0.0.0.0		luca			logout_client		19/10/2020		3:26:45
+127.0.0.1		kimi			Lose			19/10/2020		3:26:48
+127.0.0.1		kimi			logout_client		19/10/2020		3:26:48
+localhost		server			start_session		19/10/2020		3:26:48
+127.0.0.1		lucap			login_client		19/10/2020		3:27:0
+127.0.0.1		eskimo			login_client		19/10/2020		3:27:9
+127.0.0.1		eskimo			object_taken		19/10/2020		3:27:14
+127.0.0.1		eskimo			obje_deposited		19/10/2020		3:27:18
+localhost		server			end_session		19/10/2020		3:27:18
+127.0.0.1		eskimo			Winner			19/10/2020		3:27:18
+127.0.0.1		eskimo			logout_client		19/10/2020		3:27:18
+127.0.0.1		lucap			Lose			19/10/2020		3:27:21
+127.0.0.1		lucap			logout_client		19/10/2020		3:27:21
+localhost		server			start_session		19/10/2020		3:27:21
+127.0.0.1		luca			login_client		19/10/2020		3:27:37
+127.0.0.1		kimi			login_client		19/10/2020		3:27:44
+127.0.0.1		kimi			logout_client		19/10/2020		3:27:51
+127.0.0.1		luca			logout_client		19/10/2020		3:27:53
+localhost		server			close_server		19/10/2020		3:27:56
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		3:36:46
+localhost		server			start_session		19/10/2020		3:36:48
+0.0.0.0		luca			login_client		19/10/2020		3:37:8
+127.0.0.1		kimi			login_client		19/10/2020		3:37:15
+127.0.0.1		kimi			object_taken		19/10/2020		3:37:21
+127.0.0.1		kimi			obje_deposited		19/10/2020		3:37:24
+localhost		server			end_session		19/10/2020		3:37:24
+127.0.0.1		kimi			Winner			19/10/2020		3:37:24
+127.0.0.1		kimi			logout_client		19/10/2020		3:37:24
+0.0.0.0		luca			Lose			19/10/2020		3:37:31
+0.0.0.0		luca			logout_client		19/10/2020		3:37:31
+localhost		server			start_session		19/10/2020		3:37:31
+localhost		server			close_server		19/10/2020		3:37:44
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:12:33
+localhost		server			start_session		19/10/2020		14:12:37
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:12:43
+localhost		server			close_server		19/10/2020		14:12:49
+0.0.0.0		luca			login_client		19/10/2020		14:12:58
+0.0.0.0		luca			logout_client		19/10/2020		14:13:18
+localhost		server			close_server		19/10/2020		14:13:22
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:13:24
+localhost		server			start_session		19/10/2020		14:13:27
+0.0.0.0		luca			login_client		19/10/2020		14:13:33
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:14:25
+localhost		server			start_session		19/10/2020		14:14:27
+0.0.0.0		kimi			login_client		19/10/2020		14:14:35
+0.0.0.0		kimi			logout_client		19/10/2020		14:14:39
+localhost		server			close_server		19/10/2020		14:14:46
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:15:34
+localhost		server			start_session		19/10/2020		14:15:36
+0.0.0.0		luca			login_client		19/10/2020		14:15:41
+0.0.0.0		luca			logout_client		19/10/2020		14:15:44
+localhost		server			close_server		19/10/2020		14:15:45
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:16:23
+localhost		server			start_session		19/10/2020		14:16:25
+0.0.0.0		luca			login_client		19/10/2020		14:16:30
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:16:35
+localhost		server			close_server		19/10/2020		14:16:37
+127.0.0.1		kimi			login_client		19/10/2020		14:16:48
+127.0.0.1		kimi			object_taken		19/10/2020		14:16:56
+127.0.0.1		kimi			obje_deposited		19/10/2020		14:17:2
+localhost		server			end_session		19/10/2020		14:17:2
+127.0.0.1		kimi			Winner			19/10/2020		14:17:2
+127.0.0.1		kimi			logout_client		19/10/2020		14:17:2
+0.0.0.0		luca			Lose			19/10/2020		14:17:19
+0.0.0.0		luca			logout_client		19/10/2020		14:17:19
+localhost		server			start_session		19/10/2020		14:17:19
+localhost		server			close_server		19/10/2020		14:17:51
+
+INDIRIZZO IP		UTENTE			OPERAZIONE		DATA			ORARIO
+localhost		server			start_server		19/10/2020		14:21:55
+localhost		server			start_session		19/10/2020		14:21:57
+0.0.0.0		luca			login_client		19/10/2020		14:22:1
+127.0.0.1		kimi			login_client		19/10/2020		14:22:7
+127.0.0.1		kimi			object_taken		19/10/2020		14:22:12
+127.0.0.1		kimi			obje_deposited		19/10/2020		14:22:15
+localhost		server			end_session		19/10/2020		14:22:15
+127.0.0.1		kimi			Winner			19/10/2020		14:22:15
+127.0.0.1		kimi			logout_client		19/10/2020		14:22:15
+0.0.0.0		luca			Lose			19/10/2020		14:22:21
+0.0.0.0		luca			logout_client		19/10/2020		14:22:21
+localhost		server			start_session		19/10/2020		14:22:21
+127.0.0.1		luca			login_client		19/10/2020		14:22:28
+127.0.0.1		luca			object_taken		19/10/2020		14:22:33
+127.0.0.1		luca			obje_deposited		19/10/2020		14:22:36
+localhost		server			end_session		19/10/2020		14:22:36
+127.0.0.1		luca			Winner			19/10/2020		14:22:36
+127.0.0.1		luca			logout_client		19/10/2020		14:22:36
+localhost		server			start_session		19/10/2020		14:22:36
