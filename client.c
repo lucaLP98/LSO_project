@@ -148,6 +148,7 @@ int main(int argc, char *argv[]){
         }
     }
     client_user.username[strlen(client_user.username)-1] = '\0'; //Elimino il '\n' alla fine dell'username per stamparlo a video
+    client_user.found_objects = 0;
 
     //imposto segnali per la fase di gioco
     if(signal(SIGINT, sigHandlerMenu) == SIG_ERR) error("\n\n CLIENT : Errore installazione segnale\n\n", -12);
