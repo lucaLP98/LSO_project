@@ -20,7 +20,7 @@ Il server ed il client vanno realizzati in linguaggio C su piattaforma UNIX/Linu
   
 <BR><BR>
 <H1> DOCUMENTAZIONE </H1>
-La documentazione del progetto, comprensiva di un manuale d'utilizzo è visionabile al seguente <a href="https://drive.google.com/file/d/19WEkxOB4Og-xVh3L1zOxhjhA1Faa1guZ/view?usp=sharing">LINK</a><br><br>
+La documentazione del progetto, comprensiva di un manuale d'utilizzo è visionabile al seguente <a href=https://drive.google.com/file/d/1WWOiUW6Ll6dSHXcxcWPcikAkCplBaYjM/view?usp=sharing">LINK</a><br><br>
 La documentazione è divisa nei seguenti capitoli:<br>
   <ul>
     <li>Guida all'installazione</li>
