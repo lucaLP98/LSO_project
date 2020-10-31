@@ -29,13 +29,13 @@ int main(int argc, char *argv[]){
     pthread_t client_thread; //variabile che conterra' il TID del thread che gestira il client
 
     //impostazione handler per segnali durante la comunicazione con i client
+    if(signal(SIGPIPE, SIG_IGN) == SIG_ERR) error("\n\n SERVER : ERRORE INSTALLAZIONE SEGNALE\n\n", -12); //imposto handler per catturare segnale SIGPIPE (Chiusura della socket lato client)
     if(signal(SIGINT, closeServer) == SIG_ERR) error("\n\n SERVER : ERRORE INSTALLAZIONE SEGNALE\n\n", -12); //imposto handler per catturare segnale SIGINT (interruzione da tastiera ctrl-c)
     if(signal(SIGTSTP, closeServer) == SIG_ERR) error("\n\n SERVER : ERRORE INSTALLAZIONE SEGNALE\n\n", -12); //imposto handler per catturare segnale SIGTSTP (interruzione da tastiera ctrl-z)
     if(signal(SIGHUP, closeServer) == SIG_ERR) error("\n\n SERVER : ERRORE INSTALLAZIONE SEGNALE\n\n", -12); //imposto handler per catturare segnale SIGHUP (disconnessione del terminale)
     if(signal(SIGQUIT, closeServer) == SIG_ERR) error("\n\n SERVER : ERRORE INSTALLAZIONE SEGNALE\n\n", -12); //imposto handler per catturare segnale SIGQUIT (quit da tastiera ctrl-\)
     if(signal(SIGTERM, closeServer) == SIG_ERR) error("\n\n SERVER : ERRORE INSTALLAZIONE SEGNALE\n\n", -12); //imposto handler per catturare segnale SIGTERM (TERMINAZIONE GENERATA DAL COMANDO KILL DA TERMINALE)
-    if(signal(SIGPIPE, SIG_IGN) == SIG_ERR) error("\n\n SERVER : ERRORE INSTALLAZIONE SEGNALE\n\n", -12); //imposto handler per catturare segnale SIGPIPE (Chiusura della socket lato client)
-    
+
     //Lettura file utenti e inseriemento dati in ABR dedicato
     createUsersTree("utenti.txt"); 
 
