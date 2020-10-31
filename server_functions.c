@@ -440,6 +440,48 @@ void printMatrix_server(){
     writeOnSTDOUT("\n\n\n Premere CTRL-C per interrompere l'esecuzione in qualsiasi momento\n\n");
 }
 
+void logoutClient(usersTree client_user, int sock_descriptor, dati_log log_buf){
+    pthread_mutex_lock(matrix_mutex);
+    if(client_user->User.object != -1){
+        //se l'utente che effettua il logaut porta con se un oggetto, posiziono l'oggetto di nuovo sul campo
+        if(camp.matrix[client_user->User.current_position.row][client_user->User.current_position.column].content == -1)
+            //se l'ultima posizione dell'utente che ha effettuato il logout è vuota poso l'oggetto
+            camp.matrix[client_user->User.current_position.row][client_user->User.current_position.column].content = client_user->User.object;
+        else{
+            //se l'ultima posizione dell'utente che ha effettuato il logout contiene una locazione o un altro oggetto, allora
+            //genero delle coordinate random dove andro a posizionare l'oggetto 
+            coordinates tmp;
+            do{
+                tmp.row = rand()%camp.dimension;
+                tmp.column = rand()%camp.dimension;
+            }while(camp.matrix[tmp.row][tmp.column].content != -1);
+            camp.matrix[tmp.row][tmp.column].content = client_user->User.object;
+        }
+    }
+    camp.matrix[client_user->User.current_position.row][client_user->User.current_position.column].user_mov = -1;
+    pthread_mutex_unlock(matrix_mutex);
+
+    client_user->User.status = OFFLINE;
+    client_user->User.userID = 0;
+    client_user->User.object = -1;
+
+    pthread_mutex_lock(tid_list_mutex);
+    list = deleteThread(pthread_self(), list);
+    pthread_mutex_unlock(tid_list_mutex);
+
+    //aggiorno file di log
+    strcpy(log_buf.operation, "logout_client");
+    writeOnLogFile(log_buf);
+    cleanString(log_buf.operation);
+
+    //chiusura socket e uscita dal thread
+    close(sock_descriptor);
+    system("clear");
+    writeOnSTDOUT("\n\n\t ********** CAMPO DA GIOCO **********\n\n");
+    printMatrix_server();
+    pthread_exit(NULL);
+}
+
 void *gestisciClient(void *arg){
     client_data data = (client_data)arg;
     char client_access_mode, mode, login_done = 'f', buf[100], ip_buf[100], info_user[500];
@@ -604,7 +646,7 @@ void *gestisciClient(void *arg){
     client_user->User.current_position = temp_coord;
 
     //comunico ad utente posizione
-    if(send(data->sock_descriptor, &temp_coord, sizeof(temp_coord), 0) == -1) error("\n\n SERVER: ERRORE INVIO CAMPO DA GIOCO\n\n", -10);
+    if(send(data->sock_descriptor, &temp_coord, sizeof(temp_coord), 0) == -1) error("\n\n SERVER: ERRORE INVIO CAMPO DA G IOCO\n\n", -10);
     
     //comunico ad utente matrice
     pthread_mutex_lock(matrix_mutex);
@@ -640,45 +682,7 @@ void *gestisciClient(void *arg){
 
             //Logout e uscita dal gioco
             case 'C' : case 'c' :
-                pthread_mutex_lock(matrix_mutex);
-                if(client_user->User.object != -1){
-                    //se l'utente che effettua il logaut porta con se un oggetto, posiziono l'oggetto di nuovo sul campo
-                    if(camp.matrix[client_user->User.current_position.row][client_user->User.current_position.column].content == -1)
-                        //se l'ultima posizione dell'utente che ha effettuato il logout è vuota poso l'oggetto
-                        camp.matrix[client_user->User.current_position.row][client_user->User.current_position.column].content = client_user->User.object;
-                    else{
-                        //se l'ultima posizione dell'utente che ha effettuato il logout contiene una locazione o un altro oggetto, allora
-                        //genero delle coordinate random dove andro a posizionare l'oggetto 
-                        coordinates tmp;
-                        do{
-                            tmp.row = rand()%camp.dimension;
-                            tmp.column = rand()%camp.dimension;
-                        }while(camp.matrix[tmp.row][tmp.column].content != -1);
-                        camp.matrix[tmp.row][tmp.column].content = client_user->User.object;
-                    }
-                }
-                camp.matrix[client_user->User.current_position.row][client_user->User.current_position.column].user_mov = -1;
-                pthread_mutex_unlock(matrix_mutex);
-
-                client_user->User.status = OFFLINE;
-                client_user->User.userID = 0;
-                client_user->User.object = -1;
-
-                pthread_mutex_lock(tid_list_mutex);
-                list = deleteThread(pthread_self(), list);
-                pthread_mutex_unlock(tid_list_mutex);
-
-                //aggiorno file di log
-                strcpy(log_buf.operation, "logout_client");
-                writeOnLogFile(log_buf);
-                cleanString(log_buf.operation);
-
-                //chiusura socket e uscita dal thread
-                close(data->sock_descriptor);
-                system("clear");
-                writeOnSTDOUT("\n\n\t ********** CAMPO DA GIOCO **********\n\n");
-                printMatrix_server();
-                pthread_exit(NULL);
+                logoutClient(client_user, data->sock_descriptor, log_buf);
             break;
 
             //gestione movimento sulla mappa
@@ -738,6 +742,10 @@ void *gestisciClient(void *arg){
                             move_ok = 0;
                         }else
                             move_ok = 1;
+                    break;
+
+                    default:
+                        logoutClient(client_user, data->sock_descriptor, log_buf);
                     break;
                 }
 
