@@ -13,8 +13,8 @@
 //MAIN PROGRAM
 int main(int argc, char *argv[]){
     //controllo che il numero di parametri inseriti sia giusto
-    if(argc != 3){
-        writeOnSTDOUT("\n\n ERRORE ! Numero di parametri non valido...\n\n");
+    if(argc != 2){
+        writeOnSTDOUT("\n\n ERRORE ! Inserire come parametro il numero di porta su cui il server si pone in ascolto...\n\n");
         exit(-14);
     }
 
@@ -22,9 +22,8 @@ int main(int argc, char *argv[]){
     
     //sezione variabili locali
     struct sockaddr_in server_addr, client_addr;
-    int server_port_number = atoi(argv[2]); //porta sulla quale il server si pone in ascolto
+    int server_port_number = atoi(argv[1]); //porta sulla quale il server si pone in ascolto
     int client_addr_dim, new_socket;
-    char *IP_address_server = argv[1]; //indirizzo sul quale il server si pone in ascolto
     client_data data = NULL; //dati da passare al thread di gestione del client
     pthread_t client_thread; //variabile che conterra' il TID del thread che gestira il client
 
@@ -67,7 +66,7 @@ int main(int argc, char *argv[]){
     //inizializzazione parametri
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(server_port_number);
-    inet_aton(IP_address_server, &(server_addr.sin_addr));
+    server_addr.sin_addr.s_addr = htons(INADDR_ANY);
     memset(&(server_addr.sin_zero), '\0', 8);
     
     //instauro connessione
